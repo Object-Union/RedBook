@@ -1,0 +1,21 @@
+<scroll-view scroll-y class="scrollPage">
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <button class="cu-btn content" bindtap="showModal">
+        <text class="cuIcon-profilefill text-green"></text>
+        <text class="text-grey">我的资料</text>
+      </button>
+    </view>
+  
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+  </view>
+
+
+
+</scroll-view>

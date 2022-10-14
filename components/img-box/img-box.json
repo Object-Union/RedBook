@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+      "img-loader": "../../components/img-loader/img-loader"
+    }
+}
+  

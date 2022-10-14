@@ -1,0 +1,10 @@
+/* colorui/components/cu-custom.wxss */
+.gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}

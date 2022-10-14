@@ -1,0 +1,93 @@
+
+Page {
+    background-color: #fff8fa;
+}
+.type-wrap {
+  margin:20rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  font-size: 40rpx;
+}
+.big-type {
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid red;
+}
+
+
+
+
+.pub-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20rpx;
+}
+.pub-text {
+  background-color: #07C160;
+  color: #fff;
+  width: 120rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.input-wrap {
+  margin: 20rpx 40rpx;
+}
+.input-text {
+  height: 200rpx;
+  width: 100%;
+}
+
+.img-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20rpx 30rpx;
+}
+.one-img {
+  position: relative;
+  margin: 4rpx 8rpx;
+}
+.img-choose {
+  width: 210rpx;
+  height: 210rpx;
+}
+.close-img {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 4rpx;
+  top: 4rpx;
+}
+
+.choose-localtion {
+  margin: 50rpx 40rpx;
+  font-size: 36rpx;
+  color: rgb(90, 90, 90);
+}
+
+.video-cell {
+  width: 700rpx;
+  height: 350rpx;
+  margin: 20rpx;
+}
+
+.input_block {
+  margin: 20rpx 40rpx;
+  font-size: 36rpx;
+}
+
+
+.title-input-wrap {
+    margin: 40rpx 40rpx;
+
+}
+
+.publish-but {
+    background-color: #FF2840;
+    color: #fff;
+}

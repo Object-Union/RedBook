@@ -1,0 +1,44 @@
+<view class="publish-container">
+
+  <view class="title-input-wrap">
+    <input type="text" placeholder="填写标题" value="{{titleValue}}" maxlength="20" bindinput="getTitleValue" />
+  </view>
+
+
+  <view class="input-wrap">
+    <textarea placeholder="{{tishi}}" class="input-text" maxlength="2000" bindinput="getValue" value="{{inputValue}}"></textarea>
+  </view>
+
+
+  <picker bindchange="bindPickerChange" class='input_block' range="{{typeNameList}}">
+    <view class="input_text">
+      选择动态类型：{{chooseTypeName}}
+    </view>
+  </picker>
+
+  <view class="img-wrap" wx:if="{{!videoUrl}}">
+
+    <block wx:for="{{cloudImgList}}" wx:key="index">
+      <view class="one-img">
+        <image src="{{item}}" class="img-choose"></image>
+        <image src="/image/close.png" class="close-img" bindtap="deleteImg" data-index="{{index}}"></image>
+      </view>
+    </block>
+
+
+    <view class="one-img" bindtap="chooseImage" wx:if="{{cloudImgList.length < 9}}">
+      <image src="/images/add.png" class="img-choose"></image>
+    </view>
+  </view>
+
+  <video class="video-cell" wx:if="{{videoUrl}}" src="{{videoUrl}}"></video>
+
+
+  <view bindtap="chooseAddress" class="choose-localtion">{{localtion}}</view>
+
+
+
+  <view wx:if="{{cloudImgList.length == 0}}" class="choose-localtion" bindtap="chooseVideo">上传图片</view>
+
+  <button bindtap="submitData" class="publish-but">发布</button>
+</view>

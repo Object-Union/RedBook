@@ -1,0 +1,94 @@
+<view class="userInfo">
+  <image bindtap="returnHome" src="/images/basic_right.png" style="margin-left: 20rpx;width: 50rpx;height: 50rpx;"></image>
+  <view class="userImg">
+    <image default-image='/images/none-url.png' style="width: 90rpx;height: 90rpx;border-radius: 50%;margin-left: 20rpx;" src='{{item.user.avatarUrl}}' />
+  </view>
+  <text class="userName" style="margin-left: 70rpx;width: 200rpx;margin-top: -40rpx;">{{item.user.name}}</text>
+  <view class="sub-button" bindtap="publishComment" style="margin-left: 10%">关注</view>
+  <image src="/images/jump.png" style="margin-left: 20rpx;width: 45rpx;height: 45rpx;"></image>
+</view>
+
+
+<view class="top-banner">
+  <swiper indicator-dots="{{true}}" autoplay="true" circular="true" interval="3000" indicator-color="#eee" indicator-active-color="#FF3333">
+    <block wx:for="{{item.pictures}}" wx:key="banner">
+      <swiper-item class="add-banner">
+        <image mode="aspectFill" src='{{item}}' mode="scaleToFill" style="width:100%;height:100%;" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="bg-white" style="min-height:{{contentHeight-5}}px">
+  <view style="margin-bottom:50px;height:100%">
+
+
+    <view class="padding">
+      <view class="text-lg text-title">
+        <text class="text-black text-bold">{{item.title}}</text>
+      </view>
+      <text class="text-black text-desc" style="color: black;">{{item.context}}</text>
+    </view>
+
+    <view style="display: flex;">
+      <text style="font-size: 26rpx;margin-left: 30rpx;display: flex;justify-content: center;align-items: center;">09-18 浙江</text>
+      <button class='btn1' style="margin-right: 25rpx;">
+        <image class='btnImg' src='/images/unlike.png'></image>
+        <view style="font-size: 26rpx;">不喜欢</view>
+      </button>
+    </view>
+
+    <view class="text-gray text-sm padding">
+      <view class="cf">
+        <view class="fl">
+          <text>{{item.publishDate}}</text>
+        </view>
+        <view class="hr"></view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="comment-box">
+  <!-- 评论区 -->
+  <view class="comment-right">
+    <view style="margin-left: 30rpx;">共 {{comments.length}} 条评论</view>
+    <view style="width: 100%;height: 80rpx;display: flex;margin-top: 20rpx;">
+      <image default-image='/images/none-url.png' style="width: 60rpx;height: 60rpx;border-radius: 50%;margin-left: 20rpx;" src='{{user.avatarUrl}}' />
+      <input class="pub-input" style="height: 50%; margin-left: 20rpx;border-radius: 20px;background-color: rgb(245, 239, 239);width: 600rpx;" placeholder="说点什么,万一火了呢~" bindinput="inputFrame" model:value="{{comment}}" type="text"></input>
+    </view>
+    <block wx:for="{{comments}}" wx:key="id" style="margin-top: 40rpx;">
+      <view class="comment-one" style="margin: 10rpx">
+        <image style="margin-left: 50rpx;border-radius: 50%" src="{{item.user.avatarUrl}}" class="comment-face"></image>
+        <view class="comment-content">
+          <view class="nickname-time">
+            <view class="comment-nickname">{{item.user.name}}</view>
+            <view class="comment-time" style="font-size: 20rpx;">{{item.date}} 浙江</view>
+          </view>
+          <text class=".comment-text" style="color: black;">{{item.comment}}</text>
+          <view class="hr" style="margin-top:20rpx;margin-bottom: 20rpx;"></view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>
+
+
+<view style="height:200rpx"></view>
+<view class="pub-comment">
+  <view class="pub-left">
+    <input class="pub-input" style="width: 280rpx;" placeholder="🖊️说点什么..." bindinput="inputFrame" model:value="{{comment}}" type="text"></input>
+  </view>
+
+  <view class="pub-button" bindtap="publishComment" style="font-size: small;">发送</view>
+  <view class="hudong-cell" bindtap="prizeAction" style="margin-left: 10rpx;">
+    <image src="{{isPrized?'/images/prize_yes.png':'/images/prize.png'}}" class="hudong-img"></image>
+    <text>{{item.likes}}</text>
+  </view>
+  <image src="/images/collect.png" style="margin-left: 20rpx;" class="hudong-img"></image>
+  <text>0</text>
+  <image src="/images/comment.png" style="margin-left: 20rpx;" class="hudong-img"></image>
+  <text>{{comments.length}}</text>
+</view>

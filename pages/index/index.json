@@ -1,0 +1,12 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FF3333",
+  "navigationBarTitleText": "小红书",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "masonry": "../../components/masonry/masonry",
+    "img-box": "../../components/img-box/img-box",
+    "no-data": "../../components/no-data/no-data"
+  }
+}

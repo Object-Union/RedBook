@@ -1,0 +1,8 @@
+/**index.wxss**/
+.index-nav{
+  position:fixed;top:0;
+  z-index: 999
+}
+.container{
+  padding-top: 90rpx
+}

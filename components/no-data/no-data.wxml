@@ -1,0 +1,4 @@
+<view class="noData">
+  <image src="/images/no-data.png" mode="widthFix" class="noDataImg"></image>
+  <slot></slot>
+</view>

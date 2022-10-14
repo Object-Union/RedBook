@@ -1,0 +1,200 @@
+.userInfo {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  /* 水平线 */
+  align-items: center;
+  background-color: #fff;
+}
+
+.userImg {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 10rpx;
+}
+
+.userName {
+  font-size: 30rpx;
+  color: black;
+}
+
+.sub-button {
+  color: rgb(248, 64, 64);
+  border: solid 1rpx rgb(248, 64, 64);
+  border-radius: 30rpx;
+  padding: 5rpx 20rpx;
+}
+
+/* 顶部轮播图 */
+.top-banner {
+  border-radius: 10rpx;
+  width: 100%;
+  height: 900rpx;
+  margin: auto;
+  /* background-color: #eef5fd; */
+}
+
+swiper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  /* margin-top: 20rpx; */
+
+}
+
+.swiper-item {
+  border-radius: 10rpx;
+  /* margin-top: 20rpx; */
+}
+
+.text-title,
+.text-desc {
+  line-height: 30px;
+}
+
+.text-desc {
+  padding-top: 10px;
+}
+
+.hudong-img {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 8rpx;
+}
+
+.hudong-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 评论部分 */
+.comment-box {
+  background-color: #ffffff;
+  /* padding: 20rpx 20rpx; */
+  /* margin:0rpx 20rpx; */
+  margin-top: -100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-log {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+}
+
+.comment-one {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.comment-face {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.nickname-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 520rpx;
+}
+
+.comment-nickname {
+  color: #7F7F7F;
+  font-weight: 400;
+}
+
+.comment-time {
+  color: #7F7F7F;
+  font-size: 28rpx;
+}
+
+.comment-text {
+  margin-top: 14rpx;
+}
+
+.comment-obj {
+  color: #586B94;
+  font-weight: 550;
+}
+
+.hr {
+  width: 100%;
+  height: 3rpx;
+  margin-top: 15rpx;
+  background-color: #dfdedd;
+}
+
+/* 发布评论 */
+.pub-comment {
+  background-color: #F7F7F7;
+  padding: 20rpx 40rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.pub-left {
+  background-color: #fff;
+  color: #7F7F7F;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+
+.pub-input {
+  padding: 10rpx 20rpx;
+  width: 400rpx;
+  height: 80%;
+  color: #070606;
+  border-radius: 10px;
+  background-color: #ccc6c6;
+}
+
+.pub-button {
+  color: #7F7F7F;
+  border: solid 1rpx #7F7F7F;
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+  width: 90rpx;
+}
+
+.btn1 {
+  width: 180rpx;
+  height: 55rpx;
+  /* margin-top: 20rpx; */
+  background-color: white;
+  color: rgb(119, 115, 115);
+  border-radius: 98rpx;
+  border: solid 1rpx rgb(119, 115, 115);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0;
+}

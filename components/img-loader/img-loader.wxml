@@ -1,0 +1,2 @@
+<image wx:if='{{!finishLoadFlag}}' mode='{{mode}}' src='{{defaultImage}}'/>
+<image style="border-radius: 5px" mode='{{mode}}' class='{{finishLoadFlag ? "" : "before-load"}}' src='{{originalImage}}' bindload='finishLoad' lazy-load="true"/>

@@ -1,0 +1,68 @@
+.img-box {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #333;
+  /* box-shadow:2px 2px 10px #909090; */
+  border-radius: 2%;
+}
+
+.img-box image {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  height: auto;
+}
+
+.img-box text {
+  line-height: 45rpx;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  /* 水平线 */
+  align-items: center;
+}
+
+.userImg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.userName {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  color: rgb(112, 106, 106);
+}
+
+.prizeInfo {
+  display: flex;
+  flex-direction: row;
+  /* 水平线 */
+  align-items: center;
+  border-right: 10rpx;
+  margin-left: 230rpx;
+  margin-top: -50rpx;
+}
+
+.prize-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 6rpx;
+}
+
+.hudong-img {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 8rpx;
+}
+
+.prizeNum {
+  width: 80rpx;
+  margin-left: auto;
+  font-size: 35rpx;
+  color: rgb(112, 106, 106);
+}
